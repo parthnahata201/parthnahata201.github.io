@@ -1,141 +1,63 @@
-/* General Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Nahata - Design Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
+<body>
+    <header>
+        <div class="profile">
+            <img src="profile_pic.jpg" alt="Parth Nahata Profile Picture" class="profile-image">
+            <div>
+                <h1>Hi, I'm Parth Nahata</h1>
+                <p>A Design Student passionate about blending creativity and technical skills.</p>
+                <p>Minor in Business Analytics, aspiring entrepreneur.</p>
+            </div>
+        </div>
+    </header>
 
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
+    <nav>
+        <a href="about.html">About Me</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="scratch.html">Scratch Projects</a> | 
+        <a href="processing.html">Processing Projects</a>
+    </nav>
 
-/* Profile Container */
-.profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+    
+        <div id="3dmodeling">
+            <h3>3D Modeling</h3>
+            <img src= "prototype1.jpg"3D Modeling Project" width="300">
+            <p>Introduction to Prototyping course work showcasing my 3D modeling projects.</p>
+        </div>
 
-.profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
+        <div id="brandbuilding">
+            <h3>Brand Building</h3>
+            <img src="branding.png" alt="Brand Building Project" width="300">
+            <p>Tasked with creating a brand, including a website page, poster, and brand logo.</p>
+        </div>
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
+        <div id="artwork">
+            <h3>Artwork</h3>
+            <img src="art3.jpg" alt="Artwork" width="300">
+            <p>Here are some pieces of my artwork over the years.</p>
+        </div>
 
-header p {
-    margin: 5px 0;
-    font-size: 1.2em;
-}
+        <div id="illustrator">
+            <h3>Illustrator Projects</h3>
+            <img src="illustrator.jpg" alt="Illustrator Project" width="300">
+            <p>Projects from my graphic design course, including thematic days of the week.</p>
+        </div>
 
-
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 10px;
-}
-
-nav a {
-    color: #f4f4f9;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1em;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #EF4200;
-}
-
-/* Portfolio Section */
-#portfolio {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#portfolio h2 {
-    font-size: 2em;
-    color: #EF4200;
-    margin-bottom: 20px;
-}
-
-#portfolio div {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#portfolio div h3 {
-    color: #333;
-    font-size: 1.5em;
-}
-
-#portfolio div p {
-    font-size: 1em;
-    color: #666;
-    margin-top: 5px;
-}
-
-/* Contact and About Sections */
-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
-    color: #333;
-}
-
-section h2 {
-    font-size: 2em;
-    color: #EF4200;
-    margin-bottom: 20px;
-}
-
-section p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #f4f4f9;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-    #portfolio div, section {
-        width: 90%;
-    }
-}
+        <div id="photography">
+            <h3>Photography</h3>
+            <img src="photography10.jpg" alt="Photography" width="300">
+            <p>Photos taken on trips using either a camera or phone.</p>
+        </div>
+    </section>
+</body>
+</html>
