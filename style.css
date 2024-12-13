@@ -1,141 +1,270 @@
-/* General Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: .5px;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100%;
+    position: relative;
+    background: #f1f1f1;
 }
 
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+ol,
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
 }
 
-/* Profile Container */
-.profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    margin: 5px 0;
-    font-size: 1.2em;
-}
-
-
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 10px;
-}
-
-nav a {
-    color: #f4f4f9;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1em;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #EF4200;
-}
-
-/* Portfolio Section */
-#portfolio {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#portfolio h2 {
-    font-size: 2em;
-    color: #EF4200;
-    margin-bottom: 20px;
-}
-
-#portfolio div {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#portfolio div h3 {
-    color: #333;
-    font-size: 1.5em;
-}
-
-#portfolio div p {
-    font-size: 1em;
-    color: #666;
-    margin-top: 5px;
-}
-
-/* Contact and About Sections */
 section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
-    color: #333;
+    position: relative;
+    clear: both;
+    width: 100%;
+    padding: 80px 0;
 }
 
-section h2 {
-    font-size: 2em;
+a {
+    text-decoration: none;
+}
+
+.orange {
     color: #EF4200;
-    margin-bottom: 20px;
 }
 
-section p {
-    font-size: 1.1em;
-    color: #555;
+.bg-black {
+    background: #313131;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #f4f4f9;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 175.78px;
+    letter-spacing: 0.05em;
+
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58.59px;
+}
+
+h4 {
+    font-size: 40px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+}
+
+/*Header*/
+header {
+    background: #313131;
+    padding: 30px 0;
+}
+
+header .flexWrap {
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    padding: 0 20px !important;
+}
+
+.TBspace {
+    padding: 100px 0;
+}
+
+.navbar-nav .nav-link.active {
+    color: #EF4200;
+    text-decoration: underline;
+}
+
+.logoPanel {
+    width: 100px;
+}
+
+.headerLinks {
+    width: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+}
+
+/*Home page*/
+.introPanel h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70.31px;
+    padding-bottom: 30px
+}
+
+/*Portfolio page*/
+.portfolioWrapper h1 {
+    padding-bottom: 47px;
+}
+
+.portfolioWrapper h5 {
+    font-weight: 400;
+    color: #959595;
+    padding-bottom: 20px;
+}
+
+.portfolioWrapper p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.3px;
+    letter-spacing: 0.07em;
+    color: #FFFEFE;
+}
+
+.portfolioWrapper img {
+    padding-top: 90px;
+}
+
+.portfolioPanel {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    /* Sit on top of the page content */
+    display: block;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+
+.portfolioPanel h2 {
+    margin: 0 auto;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #fff;
+    z-index: 4;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-    #portfolio div, section {
-        width: 90%;
-    }
+.aboutPanel {
+    color: #fff;
+}
+
+.aboutPanel .col-md-5 {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 13px #EF4200;
+    padding: 0px;
+}
+
+.socialPanel a {
+    color: #000;
+    padding-right: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29.3px;
+
+}
+
+.socialPanel a:last-child {
+    padding: 0;
+}
+
+.cols {
+    -moz-column-count: 3;
+    -moz-column-gap: 2%;
+    -moz-column-width: 30%;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 2%;
+    -webkit-column-width: 30%;
+    column-count: 3;
+    column-gap: 2%;
+    column-width: 30%;
+}
+
+.box {
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.brandWrapper h5 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.brandWrapper p {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+    color: #959595;
+}
+
+.artPanel {
+    margin-top: -40%;
+}
+
+.modelPanel .cols {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.illustratorPanel div {
+    padding-bottom: 30px;
+}
+
+.form-control {
+    background-color: #D9D9D9;
+    border: 2px solid #000000;
+}
+
+.submit-btn {
+    background: #EF4200;
+    color: #fff;
+    margin-top: 20px
 }
